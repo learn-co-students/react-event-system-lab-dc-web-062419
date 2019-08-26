@@ -1,17 +1,17 @@
 // Code EyesOnMe Component Here
 import React, { Component } from 'react';
 
-    const focusEvent = () => {
-        console.log('Good!')
-    }
-
-    const blurEvent = () => {
-        console.log('Hey! Eyes on me!')
-    }
 
 
 export default class EyesOnMe extends Component{
-
+    
+    focusEvent = () => {
+        console.log('Good!')
+    }
+    
+   blurEvent = () => {
+        console.log('Hey! Eyes on me!')
+    }
 
     render(){
 
@@ -19,7 +19,7 @@ export default class EyesOnMe extends Component{
 
         return(
             <div>
-            <button onFocus={focusEvent} onBlur={blurEvent}></button>
+            <button onFocus={this.focusEvent} onBlur={this.blurEvent}></button>
             </div>
         )
 
